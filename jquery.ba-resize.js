@@ -193,8 +193,8 @@
           data = $.data( this, str_data );    
                 
         // fix related to https://github.com/cowboy/jquery-resize/issues/1
-        if (data == null) { 
-          data = $.data( this, str_data, { w: null, h: null });
+        if (data == null) {
+            data = { w: null, h: null };
         }
         
         // If called from the polling loop, w and h will be passed in as
